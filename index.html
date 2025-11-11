@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hellen Vanessa da Silva Lopes - Professora de Programação</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .container:hover {
+            transform: translateY(-5px);
+        }
+        
+        h1 {
+            color: #2575fc;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .name {
+            font-size: 3rem;
+            color: #6a11cb;
+            margin-bottom: 30px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .profession {
+            font-size: 1.8rem;
+            color: #2575fc;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+        
+        .platforms {
+            background-color: #f8f9fa;
+            border-radius: 15px;
+            padding: 25px;
+            margin-top: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .platforms h2 {
+            color: #6a11cb;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+        
+        .platform-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .platform {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: 500;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .platform:hover {
+            transform: scale(1.05);
+        }
+        
+        .footer {
+            margin-top: 40px;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            .name {
+                font-size: 2.2rem;
+            }
+            
+            .profession {
+                font-size: 1.5rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Página Pessoal</h1>
+        <div class="name">Hellen Vanessa da Silva Lopes</div>
+        <div class="profession">Professora de Programação</div>
+        
+        <div class="platforms">
+            <h2>Trabalho com as seguintes plataformas:</h2>
+            <div class="platform-list">
+                <div class="platform">p5.js</div>
+                <div class="platform">GitHub</div>
+                <div class="platform">Scratch</div>
+                <div class="platform">Entre outras</div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            Desenvolvido com HTML, CSS e JavaScript
+        </div>
+    </div>
+</body>
+</html>
